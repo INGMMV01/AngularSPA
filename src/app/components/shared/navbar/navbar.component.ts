@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  buscarHeroe(termino:string){
+  buscarHeroe = function(termino: string) {
     console.log(termino);
     console.log('kitos');
   }
