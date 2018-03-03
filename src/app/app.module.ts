@@ -16,6 +16,8 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 
+import { capitalizadoPipe } from './pipes/capitalizado.pipe';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent    
+    HeroeComponent,
+    capitalizadoPipe
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    
   ],
   providers: [
     HeroesService
